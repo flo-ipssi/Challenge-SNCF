@@ -8,12 +8,12 @@ Les clients ont une interface pour passer des commandes et en voir leurs états 
 Les admin gèrent les requêtes des clients et les traitent.
 
 
-## Lancement de l'application S3F
+## Lancement de l'application S3F - Software
 
-1/ Télécharger le zip
-2/ Dézipper le contenu dans un dossier
-3/ Ouvrir d'un terminal, se placer dans le dossier et lancer la commande "docker-compose up -d"
-4/ Ouvrir un second terminal, se placer dans le dossier et lancer la commande "php -S localhost:8000"
+1/ Télécharger le zip "\n"
+2/ Dézipper le contenu dans un dossier "\n"
+3/ Ouvrir d'un terminal, se placer dans le dossier et lancer la commande "docker-compose up -d" "\n"
+4/ Ouvrir un second terminal, se placer dans le dossier et lancer la commande "php -S localhost:8000" "\n"
 
 À partir de ceci le site web sera accessible via l'adresse localhost:8000 et la base de données via l'adresse localhost:80. Importer la base de données.
 
