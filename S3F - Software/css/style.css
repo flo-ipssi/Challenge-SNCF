@@ -1,0 +1,281 @@
+/****************************************************************/
+/*********************** PARAMETRAGE SASS ***********************/
+/****************************************************************/
+/* MIXINS */
+/****************************************************************/
+/***************************** CSS ******************************/
+/****************************************************************/
+/* HEADER */
+header {
+  position: fixed;
+  max-height: 80px;
+  width: 100%;
+  background: #fff;
+  font-family: Julius Sans One, sans-serif;
+  z-index: 99;
+  -webkit-box-shadow: -1px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 4px 4px 1px rgba(0, 0, 0, 0.3); }
+  header .navbar-header {
+    width: 100%;
+    padding: 5px 0px 10px; }
+    header .navbar-header ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      header .navbar-header ul li {
+        display: inline-block;
+        margin: 10px;
+        font-family: Maven Pro, sans-serif; }
+        header .navbar-header ul li img {
+          max-width: 50px;margin-bottom: 10px; }
+        header .navbar-header ul li a {
+          color: #555;
+          font-size: 20px; }
+          @media screen and (max-width: 965px) {
+            header .navbar-header ul li a {
+              font-size: 15px; } }
+    header .navbar-header .reseaux {
+      float: left; }
+      header .navbar-header .reseaux .fb {
+        background: url("../img/icons.png");
+        height: 30px;
+        width: 38px;
+        background-size: 300%;
+        background-position: 112px -6px; }
+      header .navbar-header .reseaux .twitter {
+        background: url("../img/icons.png");
+        height: 30px;
+        width: 38px;
+        background-size: 300%;
+        background-position: 75px -6px; }
+      header .navbar-header .reseaux .yt {
+        background: url("../img/icons.png");
+        height: 30px;
+        width: 38px;
+        background-size: 300%;
+        background-position: 74px 38px; }
+      @media screen and (max-width: 550px) {
+        header .navbar-header .reseaux {
+          display: none; } }
+    header .navbar-header .menu {
+      float: right; }
+      @media screen and (max-width: 965px) {
+        header .navbar-header .menu {
+          float: initial;
+          text-align: center; } }
+
+/* CONTENTS */
+.container-fluid .sections {
+  height: auto; }
+  .container-fluid .sections h2 {
+    width: 100%;
+    text-align: center; }
+  @media screen and (max-width: 965px) {
+    .container-fluid .sections {
+      height: auto;
+      min-height: 460px;
+      padding-bottom: 15px; } }
+.container-fluid .name {
+  /* Create the parallax scrolling effect */
+
+  background-color: #0000001a;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .container-fluid .name div img{
+    max-width: 225px;
+  }
+  .container-fluid .name div {
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 28px 0px; }
+    @media screen and (max-width: 965px) {
+      .container-fluid .name div {
+        height: 150px;
+        width: 330px; } }
+    .container-fluid .name div h1 {
+      font-size: 50px;
+      font-family: Julius Sans One, sans-serif; }
+      @media screen and (max-width: 965px) {
+        .container-fluid .name div h1 {
+          font-size: 35px; } }
+  @media screen and (max-width: 965px) {
+    .container-fluid .name {
+      padding: 80px; } }
+.container-fluid .contact {
+  background: url("../img/sncf.jpg") no-repeat;
+  background-size: cover; }
+  .container-fluid .contact h2 {
+    color: #FFF;
+    margin-top: 100px;
+    font-size: 50px;
+    height: 30px;
+    padding: 40px 0px; }
+  .container-fluid .contact .table {
+    margin: auto;margin-top: -10px; }
+    .container-fluid .contact .table form {
+      clear: both;
+      max-width: 700px;
+      margin: auto; }
+      .container-fluid .contact .table form fieldset {
+        border: 1px solid #FFF;
+        background: #0009;
+        padding: 50px 80px;
+      }
+      .container-fluid .contact .table form fieldset label {
+        color: #EEE; }
+      .container-fluid .contact .table form fieldset input[type="text"],.container-fluid .contact .table form fieldset input[type="password"], 
+      .container-fluid .contact .table form fieldset textarea {
+        width: 100%;
+        border-radius: 10px;
+        color: #333;
+        padding: 5px 15px;
+        border: 0px;
+        margin: auto;
+        margin-bottom: 15px; }
+      .container-fluid .contact .table form fieldset input[type="submit"] {
+        background: none;
+        cursor: pointer;
+        color: #FFF;
+        margin: auto;
+        display: block;
+        border: 1px solid #FFF;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px 30px;
+        border-radius: 14px;
+        -webkit-transition: background 0.5s ease, color 0.5s ease;
+        transition: background 0.5s ease, color 0.5s ease; }
+        .container-fluid .contact .table form fieldset input[type="submit"]:hover {
+          background: #FFF;
+          color: #000; }
+
+/*# sourceMappingURL=style.css.map */
+.s3f{max-height: 270px;width:auto;}
+@media screen and (max-width: 1050px){ 
+  .s3f{margin: 50px auto;} header .navbar-header ul li { float: right;}}
+
+/***** BOUTONS *****/
+.btn img, .cancel img {
+  max-width: 12px;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 19px;
+  background: url('../img/check.png') no-repeat;
+  background: #34d93c;
+  padding: 0px 8px;
+  margin-left: 30px
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #4cfc3c;
+  text-decoration: none;
+}
+
+.cancel {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 19px;
+  background: #d93434;
+  padding: 2px 10px;
+  text-decoration: none;
+  margin-left: 10px;
+  float: right;
+}
+
+.cancel:hover {
+  background: #fa3c3c;
+  text-decoration: none;
+}
+
+/***** FORMULAIRE *******/
+.form-style-8{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 800px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+
+.form-style-8 h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #b9b9b9;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
+}
+
+@media screen and (max-width: 965px){ 
+  .form-style-8{width: 500px;}}
